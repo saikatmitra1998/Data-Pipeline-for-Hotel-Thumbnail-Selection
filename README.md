@@ -1,4 +1,4 @@
-# Task 2: Main Image Selection Pipeline Implementation
+# Main Image Selection Pipeline Implementation
 
 ## Overview
 
