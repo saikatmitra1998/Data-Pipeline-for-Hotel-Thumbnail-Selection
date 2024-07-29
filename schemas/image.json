@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Image",
+  "type": "object",
+  "properties": {
+    "hotel_id": {
+      "type": "integer",
+      "description": "Identifier of the hotel"
+    },
+    "image_id": {
+      "type": "integer",
+      "minimum": 1000,
+      "description": "Identifier of the image"
+    },
+    "height": {
+      "type": "integer",
+      "description": "Identifier of the image"
+    },
+    "width": {
+      "type": "integer",
+      "description": "Identifier of the image"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date",
+      "description": "The date the message was created at"
+    },
+    "is_active": {
+      "type": "boolean",
+      "description": "Indicates if the message is active"
+    },
+    "hash": {
+      "type": "string",
+      "minLength": 16,
+      "maxLength": 16,
+      "description": "Hash value associated with the message"
+    },
+    "cdn_url": {
+      "type": "string",
+      "description": "URL of the image",
+      "minLength": 10,
+      "format": "uri"
+    }
+  },
+  "required": ["hotel_id", "image_id", "created_at", "is_active", "hash", "cdn_url","height", "width"]
+}
